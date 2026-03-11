@@ -1,0 +1,23 @@
+file =open ("students.csv","r")
+line =file.readlines()
+file.close()
+
+top students=""
+highest_total=0
+
+for line in lines [1:]:
+    data=line.strip (). split (",")
+
+    name=data[0]
+    math=int(data[1])
+    science=int(data[2])
+    english=int(data[3])
+
+    total=math+science+english 
+    print (name,"Total Marks:", total)
+
+    if total>highest _total:
+    highest _total = total 
+    top_student = name
+print ("Top student:",top_student)
+print ("Highest total:", highest _total)
